@@ -1,0 +1,10 @@
+<% 
+    if params[:number]
+        @num_loops = params[:number].to_i
+
+        @num_loops.times do %>
+            <%= params[:phrase] %>
+<%      end
+    elsif params[:word1] %>
+        <%= "#{params[:word1]} #{params[:word2]} #{params[:word3]} #{params[:word4]} #{params[:word5]}."%>
+    <% end %>
